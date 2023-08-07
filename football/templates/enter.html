@@ -1,0 +1,102 @@
+{% extends 'index.html' %}
+<!-- ***** Header Area End ***** -->
+{% block title %} Enter Data {% endblock %}
+{% block content %}
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Contact Us</h3>
+          <span class="breadcrumb"><a href="/">Home</a>  >  Contact Us</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-page section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-text">
+            <div class="section-heading">
+              <h6>Contact Us</h6>
+              <h2>Say Hello!</h2>
+            </div>
+            
+            <table>
+              <center>Table</center>
+              <td>
+                <tc>
+                  <tr>
+                    Home
+                  </tr>
+                  <tr>
+                    Game
+                    <td>
+                      Transport
+                    </td>
+                  </tr>
+                </tc>
+                <tc>
+                  Away
+                </tc>
+              </td>
+              
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-content">
+            <div class="row">
+              <div class="col-lg-12">
+                
+              </div>
+              <div class="col-lg-12">
+                <form id="fixture-form" action="" method="POST">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="homeTeam" id="homeTeam" placeholder="Home Team..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="awayTeam" id="awayTeam" placeholder="Away Team..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="date" name="matchDate" id="matchDate"  placeholder="Match Date..." required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <select name="category" id="category">
+                          <option value="BPL"> Bhutan Premier League</option>
+                          <option value="u19">Youth League U-19</option>
+                          <option value="International">International</option>
+                        </select>
+                        
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="orange-button">Submit</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+ {% endblock %}
